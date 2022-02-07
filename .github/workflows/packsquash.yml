@@ -24,7 +24,7 @@ jobs:
         with:
           name: Optimized pack
       - name: Rename Pack Name
-        run: mv pack.zip MCC-ResourcePack.zip
+        run: mv pack.zip MCChampions-ResourcePack.zip
       - name: Get The Version
         id: version
         run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
@@ -33,4 +33,4 @@ jobs:
         with:
           name: Release ${{ steps.version.outputs.VERSION }}
           files: |
-            MCC-ResourcePack.zip
+            MCChampions-ResourcePack.zip
