@@ -1,6 +1,6 @@
 # MCChampions-ResourcePack
 
-##コミット制約
+## コミット制約
 
 ```
 prefix: Subject
