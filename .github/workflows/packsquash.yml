@@ -1,6 +1,8 @@
 name: Optimize Resource Pack
 on:
   push:
+    tags:
+      - "*"
     paths:
       - 'pack/**'
       - '.github/workflows/packsquash.yml'
@@ -21,9 +23,14 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: Optimized pack
+      - name: Rename Pack Name
+        run: mv pack.zip MCC-ResourcePack.zip
+      - name: Get The Version
+        id: version
+        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: action-v${{ github.run_number }}
+          name: Release ${{ steps.version.outputs.VERSION }}
           files: |
-            pack.zip
+            MCC-ResourcePack.zip

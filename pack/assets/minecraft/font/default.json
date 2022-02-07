@@ -1,0 +1,88 @@
+{
+    "providers": [
+        {
+            "type": "ttf",
+            "file": "minecraft:negative_spaces.ttf",
+            "shift": [0.0, 0.0],
+            "size": 10.0,
+            "oversample": 1.0
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/bar.png",
+            "ascent": -26,
+            "height": 9,
+            "chars": [
+                "\uE000",
+				"\uE001",
+				"\uE002",
+				"\uE003",
+				"\uE004",
+				"\uE005"
+            ]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/leather-bar.png",
+            "ascent": -16,
+            "height": 9,
+            "chars": [
+                "\uE006",
+				"\uE007",
+				"\uE008"
+            ]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/iron-bar.png",
+            "ascent": -16,
+            "height": 9,
+            "chars": [
+                "\uE009",
+				"\uE00A",
+				"\uE00B",
+				"\uE00C"
+            ]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/diamond-bar.png",
+            "ascent": -16,
+            "height": 9,
+            "chars": [
+                "\uE00D",
+				"\uE00E",
+				"\uE00F",
+				"\uE010",
+				"\uE011"
+            ]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/golden-bar.png",
+            "ascent": -16,
+            "height": 9,
+            "chars": [
+                "\uE012",
+				"\uE013",
+				"\uE014",
+				"\uE015",
+				"\uE016"
+            ]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:font/nether-bar.png",
+            "ascent": -16,
+            "height": 9,
+            "chars": [
+                "\uE017",
+				"\uE018",
+				"\uE019",
+				"\uE01A",
+				"\uE01B",
+				"\uE01C"
+            ]
+        }
+    ]
+}
